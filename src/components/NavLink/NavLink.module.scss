@@ -1,0 +1,20 @@
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: var(--grey-dark);
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: #fff;
+}

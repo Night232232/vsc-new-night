@@ -1,0 +1,62 @@
+// ==============================
+// Variables
+// ==============================
+
+// Colors
+$primary-color: #35bfa3;
+$primary-dark: #0e4d41;
+$primary-light: #e4f2d3;
+
+$secondary-color: #4a90e2;
+
+$grey-dark: #63716e;
+$black-color: #203430;
+$grey-subtle: #f7f7f7;
+$grey-semi-subtle: #e5e6e6;
+
+// Typography
+$font-family-base: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-size-base: 1.6rem;
+
+// Spacing
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+
+// Border Radius
+$border-radius-3: 12px;
+$border-radius-2: 8px;
+
+// ==============================
+// Export as CSS variables
+// ==============================
+:root {
+  /* Colors */
+  --primary-color: #{$primary-color};
+  --primary-dark: #{$primary-dark};
+  --primary-light: #{$primary-light};
+
+  --secondary-color: #{$secondary-color};
+
+  --grey-dark: #{$grey-dark};
+  --black-color: #{$black-color};
+  --grey-subtle: #{$grey-subtle};
+  --grey-semi-subtle: #{$grey-semi-subtle};
+
+  /* Typography */
+  --font-family-base: #{$font-family-base};
+  --font-size-base: #{$font-size-base};
+
+  /* Spacing */
+  --spacing-1: #{$spacing-1};
+  --spacing-2: #{$spacing-2};
+  --spacing-3: #{$spacing-3};
+  --spacing-4: #{$spacing-4};
+  --spacing-5: #{$spacing-5};
+
+  /* Border Radius */
+  --border-radius-2: #{$border-radius-2};
+  --border-radius-3: #{$border-radius-3};
+}

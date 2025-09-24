@@ -1,0 +1,16 @@
+.header {
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerUser{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

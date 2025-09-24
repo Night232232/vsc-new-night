@@ -1,0 +1,11 @@
+.navbar {
+  width: 250px;
+  background: #fefefe;
+  padding: 15px 20px;
+}
+
+.navbarList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
