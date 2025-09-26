@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="vi">
       <body>
-        <div>{children}</div>
+        <>{children}</>
       </body>
     </html>
   );

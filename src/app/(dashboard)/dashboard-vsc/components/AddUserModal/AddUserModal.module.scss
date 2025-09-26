@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.actionsWrapper {
+  display: flex;
+  gap: 12px;
+justify-content: flex-end;
+}
+
+.cancleBtn,
+.submitBtn {
+  width: 80px;
+}

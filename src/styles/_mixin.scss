@@ -1,0 +1,15 @@
+@use "sass:map";
+
+@use "./variables" as vars;
+
+@mixin screen($breakpoint) {
+  $value: map.get(vars.$breakpoints, $breakpoint);
+
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint} chưa được định nghĩa`";
+  }
+}

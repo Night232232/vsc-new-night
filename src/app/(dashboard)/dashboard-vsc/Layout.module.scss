@@ -1,14 +1,24 @@
+@use "@/styles/mixin" as m;
+
 .wrapper {
   display: flex;
   background: #f7f7f7;
   min-height: 100vh;
+  width: 100%;
+
 }
 
 .content {
   flex: 1;
   padding: 20px 24px;
+  width: 100%;
+
+  @include m.screen("lg") {
+    margin-left: 64px;
+  }
 }
 
 .mainContent {
   margin-top: 20px;
+  width: 100%;
 }

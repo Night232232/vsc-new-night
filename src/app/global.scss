@@ -1,11 +1,42 @@
 @use "@/styles/reset";
-@use "@/styles/variables";
+@use "@/styles/variables" as *;
 @use "@/styles/mixin";
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #{$primary-color};
+  --primary-dark: #{$primary-dark};
+  --primary-light: #{$primary-light};
+
+  --secondary-color: #{$secondary-color};
+
+  --grey-dark: #{$grey-dark};
+  --grey-subtle: #{$grey-subtle};
+  --grey-semi-subtle: #{$grey-semi-subtle};
+
+  --black-color: #{$black-color};
+  --red-color: #{$red-color};
+
+  /* Typography */
+  --font-family-base: #{$font-family-base};
+  --font-size-base: #{$font-size-base};
+
+  /* Spacing */
+  --spacing-1: #{$spacing-1};
+  --spacing-2: #{$spacing-2};
+  --spacing-3: #{$spacing-3};
+  --spacing-4: #{$spacing-4};
+  --spacing-5: #{$spacing-5};
+
+  /* Border Radius */
+  --border-radius-2: #{$border-radius-2};
+  --border-radius-3: #{$border-radius-3};
 }
 
 html {
@@ -20,10 +51,16 @@ body {
 a,
 button,
 input,
-textarea {
+textarea,
+select {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
+}
+
+input,
+textarea {
+  font-size: 1.6rem;
 }
 
 a {

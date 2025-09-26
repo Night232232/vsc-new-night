@@ -1,0 +1,61 @@
+.formField {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.label {
+  font-size: 1.4rem;
+  color: var(--grey-dark);
+}
+
+.input {
+  height: 38px;
+  padding: 0 12px;
+  width: 100%;
+  background: var(--grey-subtle);
+  border: 1px solid var(--grey-dark);
+  outline: none;
+  border-radius: var(--border-radius-2);
+
+  &:focus {
+    border: 1.5px solid var(--primary-color);
+  }
+}
+
+.selectWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  &::after {
+    content: "▾";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+
+.select {
+  @extend .input;
+
+  appearance: none;
+  cursor: pointer;
+  color: var(--back-color);
+}
+
+.formError {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  color: var(--red-color);
+  font-size: 1.3rem;
+}
+
+.colorRedStar {
+  color: var(--red-color);
+}

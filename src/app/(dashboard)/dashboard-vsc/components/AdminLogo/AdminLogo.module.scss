@@ -1,3 +1,5 @@
+@use "@/styles/mixin" as m;
+
 .adminLogo {
   display: flex;
   align-items: center;
@@ -9,11 +11,25 @@
   font-weight: bold;
 }
 
+.adminLogoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
 .adminLogoPrefix {
   color: var(--primary-color);
-  margin-right: 12px;
+
+  @include m.screen("lg") {
+    display: none;
+  }
 }
 
 .adminLogoText {
   color: var(--primary-dark);
+
+  @include m.screen("lg") {
+    display: none;
+  }
 }

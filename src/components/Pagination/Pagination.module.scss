@@ -40,8 +40,9 @@
 }
 
 .disabled .pageLink {
-  opacity: 0.5;
+  opacity: 0.3;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 .break {
@@ -50,4 +51,53 @@
   justify-content: center;
   width: 35px;
   height: 35px;
+}
+
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--grey-subtle);
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none; // chặn hover/click
+  }
+}
+
+.paggingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paggingShow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.select {
+  background: var(--grey-subtle);
+  color: var(--black-color);
+  font-weight: 600;
+  padding: 6px 8px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.paggingShowText {
+  color: var(--grey-dark);
 }

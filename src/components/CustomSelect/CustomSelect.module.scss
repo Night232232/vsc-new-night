@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey-subtle);
+  color: var(--black-color);
+  font-weight: 600;
+  padding: 12px; // chừa chỗ bên phải cho icon
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  right: 8px; // chỉnh sang trái/phải tùy ý
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  color: var(--black-color);
+  pointer-events: none; // tránh bị chặn click
+}

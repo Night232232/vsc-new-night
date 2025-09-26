@@ -1,6 +1,9 @@
 "use client";
 
+// Icons
 import { Search } from "lucide-react";
+
+// SCSS
 import styles from "./PageHeader.module.scss";
 
 function PageHeader({ title, onSearch, actions }) {
@@ -11,7 +14,6 @@ function PageHeader({ title, onSearch, actions }) {
       <div className={styles.actions}>
         {/* Search */}
         <div className={styles.searchWrapper}>
-          <Search size={20} color="var(--primary-dark)" />
           {onSearch && (
             <input
               type="text"
@@ -20,6 +22,9 @@ function PageHeader({ title, onSearch, actions }) {
               onChange={(e) => onSearch(e.target.value)}
             />
           )}
+          <button className={styles.searchBtn}>
+            <Search size={20} color="#fff" />
+          </button>
         </div>
 
         {/* Actions */}

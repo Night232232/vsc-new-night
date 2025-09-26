@@ -1,9 +1,20 @@
+@use "@/styles/mixin" as m;
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+}
+
 .table {
   width: 100%;
+  min-width: 800px;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 8px;
   color: var(--black-color);
+  table-layout: auto;
 
   thead {
     height: 44px;
@@ -19,66 +30,16 @@
     vertical-align: middle;
     border-bottom: 1px solid var(--grey-semi-subtle);
     text-align: center;
+    white-space: nowrap;
   }
 
   th {
     border-bottom: none;
   }
 }
-
-.checkboxCell {
+.actionRow {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-}
-
-.checkbox {
-  display: inline-block;
-  position: relative;
-  padding-left: 24px;
-  cursor: pointer;
-  user-select: none;
-
-  input {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    cursor: pointer;
-  }
-
-  .checkmark {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 18px;
-    width: 18px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  input:checked + .checkmark {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-  }
-
-  .checkmark::after {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 5px;
-    top: 2px;
-    width: 6px;
-    height: 10px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-  }
-
-  input:checked + .checkmark::after {
-    display: block;
-  }
+  gap: 12px;
 }
