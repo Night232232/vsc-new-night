@@ -240,7 +240,7 @@ function AdminUserManagement() {
           // <Button variant="secondary" key="filter">
           //   <Filter size={20} color="var(--primary-dark)" />
           // </Button>,
-          <AddUserModal />,
+          <AddUserModal key="addUserModal" />,
         ]}
       />
       <Table
